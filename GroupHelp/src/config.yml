@@ -1,0 +1,47 @@
+# Group name must coincide with permission.
+# For example, if player has permission 'grouphelp.example',
+# They will get help from group 'example'.
+
+
+
+# Note that there's %s which can show the current chapter
+help-header: '§b§l===== Help, chapter §a§l%s §b§l====='
+no-help-provided: '§cNo help provided'
+no-permission: '§cYou don''t have permission.'
+command-only-for-players: '§cOnly players can execute this command.'
+
+
+
+# Warning: do not write more than 10-15 lines per chapter as they may not be visible.
+# Also, apply formatting to every line separately because it gets reset by the game.
+# Set 'default-weight' according to your group's weight.
+# Chapters with same name are overridden by the group with higher weight.
+# Please, write every group/chapter name in lowercase.
+# Feel free to play with the following section!
+groups:
+  default:
+    default-weight: 100
+    default-message:
+      - "§eSwitch between one of the following chapters with §a/help [group name]"
+      - "§aBasics§f: Basic server commands"
+      - "§aSelection§f: Selecting area"
+    basics:
+      - "§a/help§f: Show this help"
+      - "§a/rules§f: Show the server rules"
+      - "§a/ping [text]§f: Test connection to server"
+    selection:
+      - "§a//wand§f: Get the region selection tool to select region using your mouse"
+      - "§a//hpos1§e and §a//hpos2§f: Select the corners of the region by the block you are watching at"
+      - "§a//pos1§e and §a//pos2§f: Select the corners of the region by coordinates of your player"
+      - "§a//expand <amount> <direction>§f: Expand the selection in the specified direction"
+      - "§a//contract <amount> <direction>§f: Reduce the selection in the specified direction"
+      - "§a//size§f: Get information about the selection"
+  builder:
+    default-weight: 200
+    default-message:
+      - "§bSince you are pro builder, we assume you know how to play!!"
+      - "Have fun!!"
+  admin:
+    default-weight: 500
+    basics:
+      - "§bYou are basically overpowered"

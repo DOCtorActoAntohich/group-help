@@ -1,0 +1,22 @@
+name: GroupHelp
+description: 'Simple customizable plugin for showing help to players from different groups.'
+version: 2.0
+main: com.doc.grouphelp.GroupHelp
+api-version: 1.16
+author: DOCtorActoAntohich
+
+permissions:
+  grouphelp.help:
+    description: Allows to use /help command.
+  grouphelp.reloadhelp:
+    description: Allows to use /reloadhelp command.
+
+commands:
+  help:
+    description: 'Shows help message (players only).'
+    usage: 'Usage: /help [chapter]'
+    permission: grouphelp.help
+  reloadhelp:
+    description: 'Reloads config in memory.'
+    usage: 'Usage: /reloadhelp'
+    permission: grouphelp.reloadhelp
